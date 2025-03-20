@@ -1,0 +1,36 @@
+<head>
+	<title>Enter Message</title>
+	<link
+		rel="stylesheet"
+		href="/styles.css"
+	/>
+</head>
+<body>
+	<%- include('navbar', {links: links}) %>
+	<div id="form-container">
+		<form
+			id="form"
+			method="POST"
+			action="/new"
+		>
+			<div>
+				<div>
+					<label for="message">Enter new message:</label>
+					<input
+						type="text"
+						name="message"
+					/>
+				</div>
+				<div>
+					<label for="message">Enter user:</label>
+					<input
+						type="text"
+						name="user"
+					/>
+				</div>
+			</div>
+
+			<button type="submit">Enter</button>
+		</form>
+	</div>
+</body>

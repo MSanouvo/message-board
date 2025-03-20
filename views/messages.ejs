@@ -1,0 +1,11 @@
+<li class="message">
+	<div class="message-content">
+		<!-- <span> <%= index + 1 %>. </span> -->
+		<span> <%= message.message %></span>
+	</div>
+	<div class="message-detail">
+		<span class="user"> <%= message.author %></span>
+		<span> <%= message.date %></span>
+		<a class="details" href="/message/<%= index %>"><button class="detail-btn"> ... </button></a>
+	</div>
+</li>

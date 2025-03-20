@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <%- include('navbar', {links: links}) %>
+        <ul id="message-list">
+            <% messages.forEach((message, index) => { %>
+                    <%- include('messages', {message:message, index: index}) %>
+           <% }) %>
+        </ul>
+    </body>
+</html>
